@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Ishmam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(22, 51, 76);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.02rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #000121;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration:none ;
+            display: inline-block;
+            text-align: center;
+
+        }
+        .leftSection .btn:hover{
+            background-color: #1a1a40;
+        }
+
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 101px 0 57px 0;
+            /* ⬅ Top margin increased from 56px to 100px */
+            display: flex;
+        }
+
+
+        .secondSection .verticle {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0 120px
+        }
+
+        .verticle {
+            position: relative;
+            /* 🔥 This makes images stay in place */
+        }
+
+        .image-top {
+            display: block;
+            max-width: 200px;
+            max-height: 90px;
+            width: auto;
+            height: auto;
+
+            position: absolute;
+            top: -100px;
+            /* Adjust this value until all logos are evenly aligned */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        .vertical-title {
+            position: relative;
+            top: 85px;
+            width: 150px;
+
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            width: 150px;
+            font-size: 12px;
+
+
+        }
+
+        footer {
+            background-color: #0e0e1a;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ishmam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contract.html">Contract Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello! My name is <span class="purple">Ishmam</span>
+                <div>and I am an aspiring</div>
+                <div style="white-space: nowrap;">
+                    <span id="element"></span>
+                </div>
+                <div class="buttons">
+                    <!-- Make the link styled as a button -->
+                    <a href="https://drive.google.com/file/d/1qkq9AGt1vFDY3iY1QMw3PDV-A1wndclY/view?usp=sharing" class="btn">Download Resume</a>
+                    <a href="https://www.linkedin.com/in/ishmamb/" class="btn">Linkedin</a>
+                    
+                </div>
+            </div>
+            
+            <div class="rightSection">
+                <img src="devicon.png.png" alt="Developer Icon" />
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experiences</h1>
+            <br>
+            <div class="box">
+                <div class="verticle">
+                    <img class="image-top" src="jira.png">
+                    <div class="vertical-title">
+                        <br>Product Manager (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Was responsible for desiging and maintaing digital products at Halal Plus.
+                        Halal Plus is a US Based company located in Dhaka.
+
+
+                    </div>
+
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="cpp.png">
+                    <div class="vertical-title">
+                        <br>C++ Programmer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Solved more than 100 problems on Codeforces and Hackerrank.
+                        Participated in intra university coding competitions.
+
+                    </div>
+
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="java.webp">
+                    <div class="vertical-title">
+                        <br>Java Developer (2024-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Built some enterprise level applications using Java and JavaFx.
+                        Most of the projects were for course work at university.
+
+                    </div>
+
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="da.png">
+                    <div class="vertical-title">
+                        <br>Data Analyst (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Managed and designed database systems for Lambda Academy.
+                        Lambda Academy is a university oriented company located in Dhaka.
+
+                    </div>
+
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="webdev.png">
+                    <div class="vertical-title">
+                        <br>Web Developer (2025-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Learning and developing scalable websites for personal projects.
+                        Using HTML,CSS,JS for development.
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Ishmam's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contract</li>
+                </ul>
+
+            </div>
+            <div class="footer-third"></div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contract</li>
+            </ul>
+            <div class="footer-fourth"></div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contract</li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-rights">
+                Copyright &#169; www.ishmamportfolio.com | All rights reserved </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Data Analyst', 'Product Manager', 'Computer Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
