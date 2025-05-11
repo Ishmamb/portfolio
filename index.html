@@ -826,23 +826,23 @@
       });
     });
 
-    // Visitor Counter with CountAPI
-    const updateVisitorCount = () => {
-      const namespace = 'ishmam-portfolio';
-      const key = 'visits';
-      
-      // First try to increment the count
-      fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
-        .then(res => res.json())
-        .then(data => {
-          animateCounter(document.getElementById('count'), data.value);
-        })
-        .catch(error => {
-          console.log('Visitor counter error:', error);
-          // Fallback if API fails
-          document.getElementById('count').textContent = '1000+';
-        });
-    };
+   // Visitor Counter with CountAPI - Updated for your domain
+const updateVisitorCount = () => {
+  const namespace = 'ishmamb-github-io-portfolio'; // Using your domain as namespace
+  const key = 'visits';
+  
+  // First try to increment the count
+  fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+    .then(res => res.json())
+    .then(data => {
+      animateCounter(document.getElementById('count'), data.value);
+    })
+    .catch(error => {
+      console.log('Visitor counter error:', error);
+      // Fallback if API fails
+      document.getElementById('count').textContent = '1000+';
+    });
+};
 
     // Counter animation
     const animateCounter = (element, finalNumber, duration = 2000) => {
