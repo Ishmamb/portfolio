@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Ishmam</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-
-     
-        .left {
-            font-size: 1.5rem;
-        }
-
-        
-    
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-        }
-
-        .firstSection>div {
-            width: 30%;
-        }
-
-        .leftSection {
-            font-size: 3rem;
-        }
-        
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ishmamul Hoque Bhuiyan – Academic Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-4xl mx-auto my-12 bg-white shadow-xl rounded-2xl p-10">
+    <header class="flex items-center gap-8">
+      <img src="pic.png" class="w-40 h-40 rounded-xl object-cover bg-gray-200" />
+      <div>
+        <h1 class="text-4xl font-bold">Ishmamul Hoque Bhuiyan</h1>
+        <p class="text-gray-600 mt-1">ishmambofficial@gmail.com | +8801826112007</p>
+        <p class="text-gray-600">facebook.com/ishmamB | linkedin.com/in/ishmamb</p>
+      </div>
+    </header>
 
-<body>
+    <button onclick="window.print()" class="mt-6 bg-blue-600 text-white px-5 py-2 rounded-lg text-sm">Download / Print</button>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-blue-600 pl-3">Research Interests</h2>
+      <ul class="list-disc pl-6 mt-3">
+        <li>Artificial Intelligence & Machine Learning</li>
+        <li>Software Engineering and Systems Design</li>
+        <li>Data Science & Applied Analytics</li>
+      </ul>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-l-4 pl-3 border-blue-600">Publications (Placeholder)</h2>
+      <ul class="list-disc pl-6 mt-3">
+        <li><strong>Bhuiyan, I.H.</strong> (2025). Algorithmic Bias in Machine Learning.<em></em> <br><em>DOI: 10.13140/RG.2.2.27440.42247.</em></li>
+      </ul>
+    </section>
 
 
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Under<span class="purple"></span>
-                <div style="white-space: nowrap;">
-                    <span id="element"></span>
-                </div></section>
-                
-    </main>
-   
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-blue-600 pl-3">Projects</h2>
+      <ul class="list-disc pl-6 mt-3">
+        <li>Queue Management System (Java + JavaFX + MySQL)</li>
+        <li>Library Management System (Java OOP)</li>
+        <li>Portfolio Website (HTML, CSS, JS)</li>
+        <li>Stock Predicting Model (Pandas & Numpy)</li>
+      </ul>
+    </section>
 
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-blue-600 pl-3">Skills</h2>
+      <ul class="list-disc pl-6 mt-3">
+        <li>Programming: C/C++, Java/Springboot, MySQL, HTML/CSS</li>
+        <li>Tools: Word, Excel, PowerPoint, Notion, Jira, OverLeaf</li>
+        <li>Certifications: Data Analytics, Product Management</li>
+      </ul>
+    </section>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Construction'],
-            typeSpeed: 60,
-        });
-    </script>
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-blue-600 pl-3">Work Experience</h2>
+      <p class="mt-3"><strong>Lambda Academy</strong> — Intern, IT Operations (Oct 2024 – Jan 2025)</p>
+      <p class="text-gray-700 mt-2">Worked on maintaining IT infrastructure, managing content, troubleshooting, and supporting backend operations.</p>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-blue-600 pl-3">Co-Curricular Activities</h2>
+      <ul class="list-disc pl-6 mt-3">
+        <li>Campus Ambassador – English Olympiad</li>
+        <li>Youth Volunteer – Bangladesh Red Crescent Society</li>
+        <li>Organizing Member – National Science Fest & UIU CSE Fest</li>
+      </ul>
+    </section>
+
+    <section class="mt-10 mb-6">
+      <h2 class="text-2xl font-semibold border-l-4 border-blue-600 pl-3">Education</h2>
+      <ul class="list-disc pl-6 mt-3">
+        <li><b>United International University</b><em><br> Bachelor in Science<br> Dept. of Computer Science and Engineering<br> Sept, 2023–Present | CGPA: 3.03 (6th Trimester)</em></li>
+        <li><b>Birshrestha Munshi Abdur Rouf Public College</b><em><br> Higher Secondary Certificate<br> Science | 2020-2022<br> GPA: 5.00 (Out of 5.00)</em></li>
+        <li><b>Feni Government Pilot High School</b><em><br> Secondary School Certificate<br> Science | 2019-2020<br> GPA: 5.00 (Out of 5.00)</em></li>
+      </ul>
+    </section>
+  </div>
 </body>
-
 </html>
